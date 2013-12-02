@@ -72,6 +72,7 @@ app.put('/api/lists/:id',function(req, res){
 
 app.delete('/api/lists/:id',function(req, res){
     return db.List.findById(req.params.id, function(err, list){
+        /*
         list.remove(function(err){
             if(err){
                 console.log(err);
@@ -80,6 +81,7 @@ app.delete('/api/lists/:id',function(req, res){
                 res.send('');
             }
         });
+        */
         res.send(list);
     });
 });
