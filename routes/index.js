@@ -6,8 +6,4 @@ exports.index = function (req, res) {
         group:"D",
         teams:[]
     });
-
-
-
-
 };
